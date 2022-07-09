@@ -5,7 +5,7 @@ using namespace std;
 vector<string> stooges{"Lary", "Moe", "Curly"};
 int main()
 {
-    for(auto &str:stooges)
+    for(auto const &str:stooges)
     {
         str= "tuanngoc";
     }
