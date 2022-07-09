@@ -2,16 +2,24 @@
 #include <string>
 #include <vector>
 using namespace std;
-vector<string> stooges{"Lary", "Moe", "Curly"};
 int main()
 {
-    for(auto const &str:stooges)
-    {
-        str= "tuanngoc";
-    }
-    for(auto str:stooges)
-    {
-        cout<< str<< endl;
-    }
-    return 0;
+  int num =100;
+  int num_2 =500;
+  int &ref= num;
+
+  cout<<"num = "<<num<<endl;
+  cout<<"ref = "<<ref<<endl;
+
+    num =200;
+
+  cout<<"num = "<<num<<endl;
+  cout<<"ref = "<<ref<<endl;
+
+    ref=300;
+
+
+  cout<<"num = "<<num<<endl;
+  cout<<"ref = "<<ref<<endl;
+
 }
